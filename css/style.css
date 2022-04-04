@@ -1,0 +1,13 @@
+/* Created by: Katie
+* Created on: April 2022
+* This CSS file defines the style for index.html
+* ICS2O-Assign-02-HTML-Calculations
+*/
+
+h1 {
+  color: rebeccapurple;
+  background-color: papayawhip;
+  padding: 45px;
+  border: 5px double rebeccapurple;
+  
+}
