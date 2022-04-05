@@ -40,18 +40,20 @@
         
         <!-- web page paragraph content -->
         <p>Whether you're going on a vacation, a work business trip, travelling to see family or even just wanting to complete a business transaction using Euros, conversion can be difficult and confusing. Luckily, this tool can help make it easier! Simply input the amount of money in Canadian Dollars that you'd like to convert, then press the button, and this tool will convert the quantity of money to Euros! Try it out below:</p>
-        <br>
 
         <!-- Text Field and code that makes it work for input of dollars in CAD -->
         <form action="javascript:calculateEurosClicked()">
-          <label for="CAD">$CAD</label>
-          <input type="number" id="canadian-dollars" placeholder="Dollars in CAD">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="canadian-dollars">
+            <label class="mdl-textfield__label" for="canadian-dollars">$CAD</label>
+            <span class="mdl-textfield__error">Input isn't Canadian Dollars (in numbers)</span>
+          </div>
           <br>
           <br>
           
-          <!-- MDL submit calculate information button -->
-          <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-            Calculate
+          <!-- MDL Button to do the calculation thing -->
+          <button type="submit" onlick="calculateEurosClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+            Convert to EUR
           </button>
         </form>
         
