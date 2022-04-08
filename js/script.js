@@ -28,5 +28,5 @@ function calculateKronasClicked() {
   let valueInKronas = canadianDollars / CONVERSION_RATE_SEK;
   
   // Printing the value out onto the screen. 
-  document.getElementById('calculated-kronas').innerHTML = "$" + canadianDollars + "CAD converted into SEK (Swedish Krona) is equal to approximately (because the value is rounded to two decimal places) " + valueInKronas.toFixed(2) + "."
+  document.getElementById('calculated-kronas').innerHTML = "$" + canadianDollars + "CAD converted into SEK (Swedish Krona) is equal to approximately (because the value is rounded to two decimal places) " + valueInKronas.toFixed(2) + " kr."
 }
