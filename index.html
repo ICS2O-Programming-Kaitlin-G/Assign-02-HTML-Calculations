@@ -41,11 +41,14 @@
         <!-- web page paragraph content -->
         <p>Whether you're going on a vacation, a work business trip, travelling to see family or even just wanting to complete a business transaction using Euros, conversion can be difficult and confusing. Luckily, this tool can help make it easier! Simply input the amount of money in Canadian Dollars that you'd like to convert, then press the button, and this tool will convert the quantity of money to Euros! Try it out below:</p>
 
+        <!-- Euro image -->
+        <img src="./images/euros.jpg" alt="Euros">
+
         <!-- Text Field and code that makes it work for input of dollars in CAD -->
         <form action="javascript:calculateEurosClicked()">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="canadian-dollars">
-            <label class="mdl-textfield__label" for="canadian-dollars">$CAD</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="canadian-dollars-for-euro-calculation">
+            <label class="mdl-textfield__label" for="canadian-dollars-for-euro-calculation">$CAD</label>
             <span class="mdl-textfield__error">Input isn't Canadian Dollars (in numbers)</span>
           </div>
           <br>
@@ -56,9 +59,44 @@
             Convert to EUR
           </button>
         </form>
+        <br>
         
         <!-- User Information Display Function -->
         <div id="calculated-euros"></div>
+        <br>
+
+        <!-- Bar to act as like a page divider -->
+        <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+        <!-- Header for Krona Section -->
+        <h3>Canadian Dollar to Swedish Krona Conversion</h3>
+
+        <!-- Description of this section functionality -->
+        <p>This section functions nearly identically to the section previous, the only difference being that this section converts Canadian Dollars to the Swedish Krona. Try it out below!</p>
+
+        <!-- Krona image -->
+        <img src="./images/swedish-krona.jpg" alt="Swedish Krona">
+
+        <!-- Text Field and code that makes it work for input of dollars in CAD except its for the krona this time -->
+        <form action="javascript:calculateKronasClicked()">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="canadian-dollars-for-krona-calculation">
+            <label class="mdl-textfield__label" for="canadian-dollars-for-krona-calculation">$CAD</label>
+            <span class="mdl-textfield__error">Input isn't Canadian Dollars (in numbers)</span>
+          </div>
+          <br>
+          <br>
+          
+          <!-- MDL Button to do the calculation thing -->
+          <button type="submit" onlick="calculateKronasClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+            Convert to SEK
+          </button>
+        </form>
+        <br>
+        
+        <!-- User Information Display Function -->
+        <div id="calculated-kronas"></div>
+        <br>
       </center>
     </main>
     </div>

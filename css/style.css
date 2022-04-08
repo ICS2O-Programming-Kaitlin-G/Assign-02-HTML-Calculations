@@ -11,6 +11,23 @@ h1 {
   border: 5px double rebeccapurple;
 }
 
+h3 {
+  color: rebeccapurple;
+  background-color: papayawhip;
+  padding: 5px;
+  border: 3px double rebeccapurple;
+}
+
 body {
   background-color: rgb(218, 228, 230);
+}
+
+p {
+  background-color: papayawhip;
+  color: rebeccapurple;
+  border: 2px dotted rebeccapurple;
+}
+
+img {
+  border: 5px double rebeccapurple;
 }
